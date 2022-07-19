@@ -1,0 +1,136 @@
+@font-face {
+
+    font-family: Poppins;
+    src: local('Poppins'), url('../fonts/Poppins/Poppins-Bold.ttf'), format('truetype');
+    font-weight: 700;
+    
+}
+
+@font-face {
+
+    font-family: Poppins;
+    src: local('Poppins'), url('../fonts/Poppins/Poppins-Medium.ttf');
+    font-weight: 500;
+
+}
+
+@font-face {
+
+    font-family: Poppins;
+    src: local('Poppins'), url('../fonts/Poppins/Poppins-Light.ttf');
+    font-weight: 400;
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    position: fixed;
+    top: 0;
+    font-family: Poppins;
+
+}
+
+.right-side {
+
+    display: flex;
+    gap: 2.2rem;
+    align-items: center;
+
+}
+
+.links {
+
+    display: flex;
+    gap: .5rem;
+
+}
+
+.links a {
+
+    color: rgb(158, 158, 158);
+    cursor: pointer;
+    transition: .5s ease;
+    font-weight: 500;
+    font-size: x-small;
+    text-decoration: none;
+
+}
+
+.links a:hover {
+    color: rgb(253, 253, 253);
+    transition: .5s ease;
+}
+
+.icons {
+
+    display: flex;
+    margin-right: 1rem;
+    gap: .4rem;
+
+}
+
+.icons img {
+    width: .7rem;
+}
+
+.icons a {
+
+    width: 10px;
+    height: 10px;
+    padding: .7rem;
+    display: inline-flex;
+    background: rgba(217, 217, 217, 0.1);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(255,255,255,0.5);
+
+}
+
+.icons a::before {
+
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+
+}
+
+.icons a:hover::before {
+    transform: scale(1);
+}
+
+.icons a:hover img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+a img {
+    width: 40%;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+#github {
+
+    width: 25px;
+    height: 25px;
+    padding: .2rem;
+    
+}
+
+.scrolled {
+
+    background-color: rgb(58, 58, 58);
+
+}
